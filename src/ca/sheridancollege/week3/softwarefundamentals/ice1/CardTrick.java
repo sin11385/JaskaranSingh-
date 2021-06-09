@@ -33,18 +33,18 @@ public class CardTrick {
         
         
         Scanner input = new Scanner (System.in);
-        Card randomcard =new Card();
+        Card luckycard =new Card();
         System.out.println("choose the card between 1 and 13 ");
         int gValue = input.nextInt();
-        randomcard.setValue(gValue);
+        luckycard.setValue(gValue);
         System.out.println("Enter a suit: 1(Hearts), 2(Diamonds), 3(Spades), 4(Clubs)");
         int gSuits = input.nextInt();
-        randomcard.setSuits(Card.SUITS[gSuits]);
+        luckycard.setSuits(Card.SUITS[gSuits]);
         // and search magicHand here
         boolean match =true ;
         for (int i=0;i<magicHand.length ; i++)
         {
-            if (randomcard.getValue()==magicHand[i].getValue()&& randomcard.getSuit()== magicHand[i].getSuit()){
+            if (luckycard.getValue()==magicHand[i].getValue()&& luckycard.getSuit()== magicHand[i].getSuit()){
                 match =true ;
                 break;
             }

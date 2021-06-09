@@ -13,6 +13,8 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author sivagama
+ * modifier Jaskaran Singh 
+ * student Number 991632348
  */
 public class Card {
 
@@ -46,6 +48,10 @@ public class Card {
      */
     public void setValue(int value) {
         this.value = value;
+    }
+
+    void setSuits(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
    
    
